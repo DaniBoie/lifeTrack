@@ -1,8 +1,8 @@
+const { Schedule } = require('../models')
 const router = require('express').Router()
-const { Schedule} = require('../models')
 
 router.get('/schedule', (req, res) => {
-  Sschedule.findAll()
+  Schedule.findAll()
     .then(schedule => res.json(schedule))
     .catch(err => console.log(err))
 })

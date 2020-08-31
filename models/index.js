@@ -1,5 +1,5 @@
-// const _____ = require('_____')
+const Diary = require('./Diary.js')
+const Schedule = require('./Schedule.js')
 
 
-
-// module.exports = {_____}
+module.exports = {Diary, Schedule}
