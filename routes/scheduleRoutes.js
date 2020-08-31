@@ -1,8 +1,8 @@
 const router = require('express').Router()
-const { Syrup } = require('../models')
+const { Schedule} = require('../models')
 
 router.get('/schedule', (req, res) => {
-  Syrup.findAll()
+  Sschedule.findAll()
     .then(schedule => res.json(schedule))
     .catch(err => console.log(err))
 })
