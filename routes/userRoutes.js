@@ -17,7 +17,7 @@ router.get('/users', (req, res) => {
 
 // GET one user
 router.get('/users/:id', (req, res) => {
-  User.findOne({ where: { id: req.params.id })
+  User.findOne({ where: { id: req.params.id }})
     .then(user => { res.json(user) })
     .catch(err => console.log(err))
 })
