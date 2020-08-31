@@ -2,13 +2,90 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Life Track</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Life Tracker</title>
+
 </head>
 
 <body>
-  <h1>Hello World!</h1>
-</body>
+    <header class="row-sm-12">
+        <h1>Hello World!</h1>
+    </header>
 
+    <div class="container-size">
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Items -->
+            <div class="collapse navbar-collapse justify-content-center nav-pills" id="navbarNavAltMarkup">
+
+                <div class="col-md-4 nav-title">
+                    <a class="nav-item nav-link" href="#">Diary<span class="sr-only">(current)</span></a>
+                </div>
+
+                <div class="col-md-4 nav-title">
+                    <a class="nav-item nav-link active" href="#">Fitness</a>
+                </div>
+
+                <div class="col-md-4 nav-title">
+                    <a class="nav-item nav-link" href="#">Support/Contact</a>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="row col-gap">
+            <section id="eventColumn" class="col-md-4 card custom-col" style="column-gap: 20px;">
+                <h1 style="text-align: center; padding: 2rem 1rem">Today Tasks</h1>
+
+                <div class="row justify-content-center" style="text-align: center;">
+                    <section class="col-md-5 card" style="border: 1px solid black;">
+                        <h4>Upcoming</h4>
+                        
+                
+                    </section>
+
+                    <br>
+                    
+                    <section class="col-md-5 card" style="border: 1px solid black; margin-left: 5px;">
+                        <h4>Finished</h4>
+                
+                    </section>
+                </div>
+            </section>
+
+            <section class="col-md-6 card custom-col">
+                <form></form>
+            </section>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <!-- <script src="./app.js"></script> -->
 </html>
