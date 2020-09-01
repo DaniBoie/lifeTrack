@@ -26,8 +26,8 @@ body header {
 }
 
 .col-gap {
-display: inline-block;
-position: relative;
+    display: inline-block;
+    position: relative;
 }
 
 /* section{
@@ -159,4 +159,23 @@ input[type=submit]:hover {
 
 .event {
     text-align: center;
+}
+
+.entryStyle {
+    display: inline-block;
+    width: 75%;
+}
+
+#entryData{
+    color: red;
+    margin-right: 5px;
+}
+
+#dateData{
+    color: green;
+}
+
+.check {
+    display: inline-block;
+    width: 20%;
 }

@@ -14,8 +14,6 @@
     <title>Life Tracker</title>
 
 </head>
-
-<body>
     <header class="row-sm-12 headStyle">
         <div class="logo"></div>
         <div class="name1">First Name</div>
@@ -36,33 +34,15 @@
                 </div>
 
                 <div class="row justify-content-center">
-                    <article class="col-sm-5 card card-size">
-                        <ul>
-                            <li>first item</li>
-                            <li>second item</li>
-                            <li>third item</li>
-                            <li>fouth item</li>
-                            <li>fifth item</li>
-                            <li>sixth item</li>
-                            <li>seventh item</li>
-                            <li>eighth item</li>
-                            <li>ninth item</li>
-                            <li>tenth item</li>
+                    <article class="col-sm-5 card card-size" id="itemToDo">
+                        <ul id="ulToDo">
+
                         </ul>
                     </article>
 
-                    <article class="col-sm-5 card card-size">
-                        <ul>
-                            <li>first item</li>
-                            <li>second item</li>
-                            <li>third item</li>
-                            <li>fouth item</li>
-                            <li>fifth item</li>
-                            <li>sixth item</li>
-                            <li>seventh item</li>
-                            <li>eighth item</li>
-                            <li>ninth item</li>
-                            <li>tenth item</li>
+                    <article class="col-sm-5 card card-size" id="itemFinished">
+                        <ul id="ulFinished">
+                            
                         </ul>
                     </article>
                 </div>
@@ -70,7 +50,7 @@
                 <form class="event">
                     <input type="text" id="event" name="event" placeholder="Add new event...">
                     <input type="date" name="date" id="date">
-                    <input type="submit" value="Add">
+                    <input type="submit" value="Add" id="taskSubmit">
                 </form>
 
         </div>
@@ -81,12 +61,15 @@
                 <form>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Diary Entry</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea class="form-control" id="diaryInput" rows="3"></textarea>
                     </div>
-                    <button type="button" id="Diary" class="btn btn-primary">Submit Entry</button>
-
+                    <button type="button" id="diary" class="btn btn-primary">Submit Entry</button>
                 </form>
-                <br>
+            </section>
+        </div>
+
+        <div class="row col-gap col-md-6">
+                <section class=" card custom-col">
                 <form>
                     <div class="form-group">
                         <label for="formGroupExampleInput">Todays Workout</label>
@@ -124,6 +107,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="./app.js"></script>
 
 </html>
