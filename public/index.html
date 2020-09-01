@@ -14,8 +14,6 @@
     <title>Life Tracker</title>
 
 </head>
-
-<body>
     <header class="row-sm-12 headStyle">
         <div class="logo"></div>
         <div class="name1">First Name</div>
@@ -26,79 +24,80 @@
 
     <div class="container-size main">
 
-        <div class="row col-gap">
-            <section class="col-md-4 card custom-col">
+        <div class="row col-gap col-md-6">
+            <section class=" card custom-col">
                 <h1>Today Tasks</h1>
 
                 <div class="row justify-content-center">
                     <h4 class="col-md-4 sm-title">Upcoming</h4>
-                    <h4 class="col-md-4 sm-title">Finished</h4>      
+                    <h4 class="col-md-4 sm-title">Finished</h4>
                 </div>
 
                 <div class="row justify-content-center">
-                    <article class="col-sm-5 card card-size">
-                        <ul>
-                            <li>first item</li>
-                            <li>second item</li>
-                            <li>third item</li>
-                            <li>fouth item</li>
-                            <li>fifth item</li>
-                            <li>sixth item</li>
-                            <li>seventh item</li>
-                            <li>eighth item</li>
-                            <!-- <li>ninth item</li> -->
-                            <!-- <li>tenth item</li> -->
+                    <article class="col-sm-5 card card-size" id="itemToDo">
+                        <ul id="ulToDo">
+
                         </ul>
                     </article>
 
-                    <article class="col-sm-5 card card-size">
-                        <ul>
-                            <li>first item</li>
-                            <li>second item</li>
-                            <li>third item</li>
-                            <li>fouth item</li>
-                            <li>fifth item</li>
-                            <li>sixth item</li>
-                            <li>seventh item</li>
-                            <li>eighth item</li>
-                            <!-- <li>ninth item</li> -->
-                            <!-- <li>tenth item</li> -->
+                    <article class="col-sm-5 card card-size" id="itemFinished">
+                        <ul id="ulFinished">
+                            
                         </ul>
                     </article>
                 </div>
 
+<<<<<<< HEAD
                 <form>
+=======
+                <form class="event">
+>>>>>>> 92a2008764f4d054fd5d8a79ccaab9f35045a2f5
                     <input type="text" id="event" name="event" placeholder="Add new event...">
-                    <input type="submit" value="Add">
+                    <input type="date" name="date" id="date">
+                    <input type="submit" value="Add" id="taskSubmit">
                 </form>
+<<<<<<< HEAD
             </section>
 
             <section class="col-md-6 card custom-col">
+=======
+
+        </div>
+        </nav>
+
+        <div class="row col-gap col-md-6">
+            <section class=" card custom-col">
+>>>>>>> 92a2008764f4d054fd5d8a79ccaab9f35045a2f5
                 <form>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Diary Entry</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                      </div>
-                    <button type="button" id="Diary" class="btn btn-primary">Submit Entry</button>
-
+                        <textarea class="form-control" id="diaryInput" rows="3"></textarea>
+                    </div>
+                    <button type="button" id="diary" class="btn btn-primary">Submit Entry</button>
                 </form>
-                <br>
+            </section>
+        </div>
+
+        <div class="row col-gap col-md-6">
+                <section class=" card custom-col">
                 <form>
                     <div class="form-group">
-                      <label for="formGroupExampleInput">Todays Workout</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Todays Workout">
+                        <label for="formGroupExampleInput">Todays Workout</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Todays Workout">
                     </div>
                     <div class="form-group">
-                      <label for="formGroupExampleInput2">Type of exercise</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Type of exercise">
+                        <label for="formGroupExampleInput2">Type of exercise</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2"
+                            placeholder="Type of exercise">
                     </div>
-                      <div class="form-group">
-                      <label for="formGroupExampleInput2">Amount of reps</label>
-                      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Amount of reps">
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">Amount of reps</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2"
+                            placeholder="Amount of reps">
                     </div>
-                    <button type="button" id="workOut"class="btn btn-primary">Enter Workout</button>
+                    <button type="button" id="workOut" class="btn btn-primary">Enter Workout</button>
 
-                  </form>
+                </form>
             </section>
         </div>
     </div>
@@ -118,6 +117,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="./app.js"></script>
 
 </html>
