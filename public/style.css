@@ -1,16 +1,18 @@
-body header{
+body header {
     height: 100px;
     background-color: black;
     padding: 1rem 1rem 0rem;
-    margin: 1rem 1rem 0rem;
+    margin: 4rem 1rem 0rem;
     text-align: right;
     color: white;
+    border-radius: 5px;
 }
 
-.container-size{
+.container-size {
     margin: .5rem 3rem 0rem;
 }
-.nav-title{
+
+.nav-title {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
@@ -18,7 +20,7 @@ body header{
     padding: 10px;
 }
 
-.custom-col{
+.custom-col {
     border: 2px solid black;
     margin-left: 20px;
 }
@@ -90,5 +92,66 @@ input[type=submit]{
 }
 
 input[type=submit]:hover{
-    background-color: green;;
+    background-color: green;
 }
+
+/* section {
+    margin-top: 15px;
+    margin-bottom: 15px;
+} */
+
+/* #eventColumn{
+    column-gap: 20px;
+} */
+
+.frame {
+    width: 200px;
+    height: 200px;
+    /* line-height: 0; */
+    margin: -50px auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: pink;
+    color: white;
+    border-radius: 100px;
+    cursor: pointer;
+    text-align: center;
+    transition: 1.5s
+}
+
+.frame:hover {
+    background: rgba(128, 128, 128, 0.5);
+    
+}
+
+.headStyle {
+    display: flex;
+    padding: 0px;
+}
+
+.name1, .name2, .logo, .nav {
+    background-color: burlywood;
+    width: 15%;
+    margin: auto;
+    border-left: 5px solid;
+    border-right: 5px solid;
+}
+
+.name1, .name2 {
+    margin-top: 50px;
+    height: 30%;
+    text-align: center;
+}
+
+.logo {
+    height: 80%;
+}
+
+.nav {
+    height: 80%;
+}
+
+.main {
+    margin-top: 5%;
+}
+
