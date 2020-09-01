@@ -38,6 +38,12 @@ section h1 {
     padding-top: .5rem;
 }
 
+section form{
+    margin-bottom: 1rem;
+    margin-left: .3rem;
+    /* margin-right: auto; */
+}
+
 .sm-title{
     text-align: center;
     padding: .5rem 0rem .5rem;
@@ -61,12 +67,6 @@ section h1 {
     -moz-border-radius: .5rem;
     -ms-border-radius: .5rem;
     -o-border-radius: .5rem;
-}
-
-section form{
-    margin-bottom: 1rem;
-    margin-left: .3rem;
-    /* margin-right: auto; */
 }
 input[type=text]{
     border: 1px solid rgb(190, 181, 181);
@@ -95,6 +95,35 @@ input[type=submit]:hover{
     background-color: green;
 }
 
+.title-1{
+    border: 1px solid rgb(134, 67, 67);
+    text-align: center;
+    position: absolute;
+    padding: .2rem;
+}
+
+.content-box-1{
+    top: 13%;
+    height: 10rem;
+    padding: .5rem;
+    border: 1px solid black;
+}
+
+.title-2{
+    top: 52%;
+    padding: .2rem;
+    text-align: center;
+    position: absolute;
+    border: 1px solid black;
+}
+
+.content-box-2{
+    top: 28%;
+    height: 10rem;
+    padding: .5rem;
+    border: 1px solid black;
+}
+
 /* section {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -121,7 +150,6 @@ input[type=submit]:hover{
 
 .frame:hover {
     background: rgba(128, 128, 128, 0.5);
-    
 }
 
 .headStyle {
