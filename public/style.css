@@ -26,7 +26,8 @@ body header {
 }
 
 .col-gap {
-    column-gap: 8rem;
+display: inline-block;
+position: relative;
 }
 
 /* section{
