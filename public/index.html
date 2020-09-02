@@ -14,6 +14,9 @@
     <title>Life Tracker</title>
 
 </head>
+
+<body>
+    <!-- Header -->
     <header class="row-sm-12 headStyle">
         <div class="logo"></div>
         <div class="name1">First Name</div>
@@ -24,8 +27,9 @@
 
     <div class="container-size main">
 
-        <div class="row col-gap col-md-6">
-            <section class=" card custom-col">
+        <!-- Left main column -->
+        <div class="row col-gap">
+            <section class="col-md-4 card left-col">
                 <h1>Today Tasks</h1>
 
                 <div class="row justify-content-center">
@@ -33,61 +37,80 @@
                     <h4 class="col-md-4 sm-title">Finished</h4>
                 </div>
 
+                <!-- Small columns -->
                 <div class="row justify-content-center">
-                    <article class="col-sm-5 card card-size" id="itemToDo">
-                        <ul id="ulToDo">
 
-                        </ul>
+                    <article id="itemToDo" class="col-sm-5 card card-size">
+                        <ul id="ulToDo"></ul>
                     </article>
 
-                    <article class="col-sm-5 card card-size" id="itemFinished">
-                        <ul id="ulFinished">
-                            
-                        </ul>
+                    <article id="itemFinished" class="col-sm-5 card card-size">
+                        <ul id="ulFinished"></ul>
                     </article>
+
                 </div>
 
-                <form class="event">
+                <!-- Adding new event bar -->
+                <form>
                     <input type="text" id="event" name="event" placeholder="Add new event...">
                     <input type="date" name="date" id="date">
-                    <input type="submit" value="Add" id="taskSubmit">
+                    <input type="submit" value="Add">
                 </form>
 
-        </div>
-        </nav>
+            </section>
 
-        <div class="row col-gap col-md-6">
-            <section class=" card custom-col">
+            <!-- Right main column -->
+            <section class="col-md-6 right-col">
+
+                <!-- Title 1
+                <h2 class="col-md-3 title-1">Diary</h2>
+
+                Content box 1
+                <div class="card content-box-1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quam libero, veniam vero
+                        porro ipsam mollitia placeat neque odio sapiente quasi ut suscipit repudiandae quos sunt
+                        perspiciatis enim molestias dolore!</p>
+                </div> -->
+
                 <form>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Diary Entry</label>
+                        <label class="title-1" for="exampleFormControlTextarea1">Diary Entry</label>
                         <textarea class="form-control" id="diaryInput" rows="3"></textarea>
                     </div>
                     <button type="button" id="diary" class="btn btn-primary">Submit Entry</button>
                 </form>
-            </section>
-        </div>
+                
+                <!-- Title 2 -->
+                <label class="title-1" for="exampleFormControlTextarea1">Fitness</label>
 
-        <div class="row col-gap col-md-6">
-                <section class=" card custom-col">
-                <form>
-                    <div class="form-group">
-                        <label for="formGroupExampleInput">Todays Workout</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Todays Workout">
+                <!-- Content box 2 -->
+                <div class="row justify-content-between">
+                    <div class="col-sm-5 fitness-left">
+                        <div class="card fitness-card"></div>
                     </div>
-                    <div class="form-group">
-                        <label for="formGroupExampleInput2">Type of exercise</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput2"
-                            placeholder="Type of exercise">
-                    </div>
-                    <div class="form-group">
-                        <label for="formGroupExampleInput2">Amount of reps</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput2"
-                            placeholder="Amount of reps">
-                    </div>
-                    <button type="button" id="workOut" class="btn btn-primary">Enter Workout</button>
 
-                </form>
+                    <div class="col-sm-5 fitness-right">
+                        <form>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Todays Workout</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Todays Workout">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Type of exercise</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2"
+                                    placeholder="Type of exercise">
+                            </div>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput2">Amount of reps</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2"
+                                    placeholder="Amount of reps">
+                            </div>
+                            <button type="button" id="workOut" class="btn btn-primary">Enter Workout</button>
+        
+                        </form>
+                    </div>
+                </div>
+
             </section>
         </div>
     </div>
@@ -108,6 +131,6 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-        <script src="./app.js"></script>
+    <script src="./app.js"></script>
 
 </html>
