@@ -135,8 +135,8 @@ input[type=submit]:hover {
     height: 180px;
     /* line-height: 0; */
     margin: -50px auto;
-    margin-left: 10px;
-    margin-right: 10px;
+    /* margin-left: 10px;
+    margin-right: 10px; */
     background: pink;
     color: white;
     border-radius: 100px;
@@ -273,3 +273,12 @@ input[type=submit]:hover {
     font-weight: bold;
 }
 
+#dropdownMenu2{
+    color:rgb(226, 207, 207);
+    background-color:teal;
+    margin-top:45px;
+
+}
+#navBar{
+    max-width: max-content;
+}
