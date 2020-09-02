@@ -1,23 +1,13 @@
 body header {
     height: 100px;
-    background-color: black;
+    /* background-color: yellowgreen; */
     padding: 1rem 1rem 0rem;
     margin: 4rem 1rem 0rem;
     text-align: right;
     color: white;
     border-radius: 5px;
-}
-
-.container-size {
-    margin: .5rem 3rem 0rem;
-}
-
-.nav-title {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-    padding: 10px;
+    background-image: url(../../../sky-bg.jpg);
+    /* width: 100%; */
 }
 
 .left-col {
@@ -43,12 +33,6 @@ body h1 {
     font-weight: bold;
     text-align: center;
     padding: 1rem 0rem 1rem;
-}
-
-section form{
-    margin-bottom: 1rem;
-    margin-left: .3rem;
-    /* margin-right: auto; */
 }
 
 .sm-title {
@@ -170,27 +154,51 @@ input[type=submit]:hover {
     padding: 0px;
 }
 
-.name1, .name2, .logo, .nav {
+.welcome{
+    margin-right: 2rem;
+    margin-left: 4rem;
+}
+
+.welcome, .name1, .name2, .logo, .nav {
     background-color: burlywood;
     width: 15%;
-    margin: auto;
+    /* margin: auto; */
     border-left: 5px solid;
     border-right: 5px solid;
 }
 
-.name1, .name2 {
+.welcome, .name1, .name2 {
     margin-top: 50px;
     height: 30%;
     text-align: center;
 }
 
+.name1{
+    margin-right: 1rem;
+    margin-left: 2rem;
+}
+
+.name2{
+    margin-left: .5rem;
+    margin-right: 1.5rem;
+}
+
 .logo {
     height: 80%;
+    margin-top: .6rem;
+    margin-left: 2rem;
+    margin-right: 3rem;
 }
 
 .nav {
     height: 80%;
     margin: 10px;
+}
+
+#dropdownMenu2{
+    color:rgb(226, 207, 207);
+    background-color:teal;
+    margin-top: 45px;
 }
 
 .main {
@@ -223,7 +231,6 @@ input[type=submit]:hover {
 .test{
     border: 1px dotted blue;
 }
-
 
 #pad {
     padding: 0px;
@@ -259,15 +266,13 @@ input[type=submit]:hover {
     width:50%;
     margin: 4rem;
     box-shadow: 2px 2px 2px teal;
-    
-  
-    
-
 }
+
 .card-header{
     color:black;
     font-weight: bold;
 }
+
 #dropdownMenu2{
     color:rgb(226, 207, 207);
     background-color:teal;
