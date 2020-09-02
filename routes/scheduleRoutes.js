@@ -15,7 +15,6 @@ router.post('/schedule', (req,res) => {
   .catch(err => console.log(err))
 })
 
-
 // UPDATE a schedule entry
 router.put('/schedule/:id', (req,res) => {
   Schedule.update(req.body, {where: {id: req.params.id}})
