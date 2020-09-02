@@ -76,7 +76,7 @@
                 <form>
                     <input type="text" id="event" name="event" placeholder="Add new event...">
                     <input type="date" name="date" id="date">
-                    <input type="submit" value="Add">
+                    <input type="submit" value="Add" id="taskSubmit">
                 </form>
 
             </div>
@@ -87,7 +87,7 @@
                 <form>
                     <div class="form-group">
                         <label class="title-1" for="exampleFormControlTextarea1">Today Diary</label>
-                        <textarea class="form-control" id="diaryInput" rows="3"></textarea>
+                        <textarea class="diaryRender mainDiary" id="diaryInput"></textarea>
                     </div>
                     <button type="button" id="diary" class="btn btn-primary">Submit Entry</button>
                 </form>
@@ -114,7 +114,7 @@
     </div>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -124,6 +124,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
 </body>
 
 </html>
