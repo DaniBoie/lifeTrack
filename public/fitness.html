@@ -10,8 +10,9 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fitness.css">
 
-    <title>Life Track</title>
+    <title>Life Track: Fitness</title>
 </head>
 
 <body>
@@ -54,96 +55,75 @@
                 </div>         
             </header>
         </div>
+    </div>
 
-        <div class="box2">
-            <div class="card left-col">
-                <h1>Today Tasks</h1>
-
-                <div class="row justify-content-center">
-                    <h4 class="sm-title">Upcoming</h4>
-                    <h4 class="sm-title">Finished</h4>
-                </div>
-
-                <div class="row justify-content-center">
-
-                    <article id="itemToDo" class="card card-size">
-                        <ul id="ulToDo"></ul>
-                    </article>
-
-                    <article id="itemFinished" class="card card-size">
-                        <ul id="ulFinished"></ul>
-                    </article>
-
-                </div>
-
-                <form>
-                    <input type="text" id="event" name="event" placeholder="Add new event...">
-                    <input type="date" name="date" id="date">
-                    <input type="submit" value="Add">
-                </form>
+    <div class="fitness-wrapper">
+        <div class="fbox1">
+            <div class="card left-content-box">
 
             </div>
         </div>
 
-        <div class="box3">
-            <div class="right-col-1">
-                <form>
-                    <div class="form-group">
-                        <label class="title-1" for="exampleFormControlTextarea1">Today Diary</label>
-                        <textarea class="form-control" id="diaryInput" rows="3"></textarea>
-                    </div>
-                    <button type="button" id="diary" class="btn btn-primary">Submit Entry</button>
-                </form>
+        <div class="fbox2">
+            <div class="keep-up-box">
+                <h1>Great Work! Keep It Up!</h1>
             </div>
         </div>
 
-        <div class="box4">
-            <div class="right-col-2">
-                <label class="title-1" for="exampleFormControlTextarea1">Fitness</label>
-
-                <div class="row">
-                    <div class="card finess-left">
-                        <div class="workout-input">
-                            <label for="formGroupExampleInput">Todays Workout:</label>
-                            <input type="text" id="formGroupExampleInput" placeholder="Workout">
-                        </div>
-                    
-                        <div class="workout-input">
-                            <label for="formGroupExampleInput2">Type of exercise:</label>
-                            <input type="text" id="formGroupExampleInput2" placeholder="Exercise">
-                        </div>
-                    
-                        <div class="workout-input">
-                            <label for="formGroupExampleInput2">Amount of reps:</label>
-                            <input type="text" id="formGroupExampleInput2" placeholder="Reps">
-                        </div>
-                    
-                        <button type="button" id="workOut" class="btn btn-primary">Enter Workout</button>
-                    </div>
-                    
-                    <div class="card finess-left">
-                        
-                    </div>
-                </div>
-
-                    
+        <div class="fbox3">
+            <div class="card time-display">
+                <h2 class="custom-text">Display Time</h2>
             </div>
         </div>
+
+        <div class="fbox4">
+            <div class="time-box">
+                <button class="timer-button">Timer</button>
+            </div>
+
+            <div class="time-box">
+                <button class="stop-button">Stop</button>
+            </div>
+        </div>
+
+        <div class="fbox5">
+            <div class="card time-lap-box">
+
+            </div>
+        </div>
+
+        <div class="fbox6">
+            <div class="card time-display">
+                <h2 class="custom-text">Completed Workouts</h2>
+            </div>
+        </div>
+
+        <div class="fbox7">
+            <div class="card completed-workout-box">
+                
+            </div>
+        </div>
+
+
+
 
     </div>
 
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
-    <script src="./app.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="./app.js"></script>
 
 </body>
+
 </html>
