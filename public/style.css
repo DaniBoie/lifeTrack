@@ -324,4 +324,9 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+#diaryDate{
+    font-size: x-large;
 }
