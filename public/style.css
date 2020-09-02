@@ -255,3 +255,16 @@ input[type=submit]:hover {
     grid-column: 4/7;
     grid-row: 4/5;
 }
+.diaryEntry{
+    width:50%;
+    margin: 4rem;
+    box-shadow: 2px 2px 2px teal;
+    
+  
+    
+
+}
+.card-header{
+    color:black;
+    font-weight: bold;
+}
