@@ -16,7 +16,7 @@ body header {
 }
 
 .right-col-1{
-    margin-right: 1rem;
+    margin-right: 4rem;
 }
 
 .right-col-2{
@@ -123,7 +123,8 @@ input[type=submit]:hover {
     border: 1px solid black;
     margin-left: 15px;
     width: 300px;
-    height: 200px;
+    min-height: 200px;
+
 }
 
 .fitness-right{
@@ -223,19 +224,6 @@ input[type=submit]:hover {
     color: green;
 }
 
-.check {
-    display: inline-block;
-    width: 20%;
-}
-
-.test{
-    border: 1px dotted blue;
-}
-
-#pad {
-    padding: 0px;
-}
-
 .wrapper {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -273,3 +261,7 @@ input[type=submit]:hover {
     font-weight: bold;
 }
 
+.workout-input{
+    margin: .5rem;
+    
+}
