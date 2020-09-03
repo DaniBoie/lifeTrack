@@ -269,9 +269,20 @@ input[type=submit]:hover {
 .diaryEntry {
     width: 50%;
     margin: 4rem;
-    box-shadow: 2px 2px 2px teal;
+    box-shadow: 10px 10px 10px black;
+    border-top-right-radius: 2%;
+    border-bottom-left-radius:2%;
+    
 }
-
+#dateSubmit{
+    background-color:teal;
+}
+#diaryRender{
+    border: 4px solid black;
+}
+.entryDate{
+    color:teal;
+}
 .card-header {
     color: black;
     font-weight: bold;
@@ -332,4 +343,9 @@ textarea {
 
 #diaryDate{
     font-size: x-large;
+}
+
+.calendar{
+    color:teal;
+    font-weight: bold;
 }
