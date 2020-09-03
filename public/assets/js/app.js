@@ -1,6 +1,6 @@
 document.getElementById('diary').addEventListener('click', () => {
   event.preventDefault()
-  
+
   axios.post('/api/diary', {
     entry: document.getElementById('diaryInput').value
   })
@@ -21,7 +21,7 @@ document.getElementById('taskSubmit').addEventListener('click', () => {
     dateFor: document.getElementById('date').value,
     urgency: 0
   })
-    .then(function ({data}) {
+    .then(function ({ data }) {
       console.log(data)
       document.getElementById('event').value = ''
       document.getElementById('date').value = ''
@@ -39,7 +39,7 @@ document.getElementById('taskSubmit').addEventListener('click', () => {
 })
 
 document.addEventListener('click', () => {
-  if (event.target.classList.contains('check')){
+  if (event.target.classList.contains('check')) {
     let eventElem = document.createElement('li')
     eventElem.dataset.id = event.target.parentNode.dataset.id
     eventElem.innerHTML = `
@@ -48,14 +48,9 @@ document.addEventListener('click', () => {
       `
     document.getElementById('ulFinished').append(eventElem)
     event.target.parentNode.remove()
-  } else if (event.target.classList.contains('remove')){
+  } else if (event.target.classList.contains('remove')) {
     axios.delete(`/api/schedule/${event.target.parentNode.dataset.id}`)
-    .then(event.target.parentNode.remove())
-    .catch(err => console.log(err))
+      .then(event.target.parentNode.remove())
+      .catch(err => console.log(err))
   }
 })
-
-
-
-
-
