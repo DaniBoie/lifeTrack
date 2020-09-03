@@ -1,5 +1,12 @@
 let workouts = []
 
+function clearEntries() {
+  document.getElementById('workoutName').value = ''
+  document.getElementById('workoutSets').value = ''
+  document.getElementById('workoutReps').value = ''
+  document.getElementById('workoutLbs').value = ''
+}
+
 document.getElementById('workout').addEventListener('click', (event) => {
 
   let pounds
@@ -33,9 +40,19 @@ document.getElementById('workout').addEventListener('click', (event) => {
   clearEntries()
 })
 
-function clearEntries() {
-  document.getElementById('workoutName').value = ''
-  document.getElementById('workoutSets').value = ''
-  document.getElementById('workoutReps').value = ''
-  document.getElementById('workoutLbs').value = ''
-}
+document.getElementById('workoutComplete').addEventListener('click', (event) => {
+  event.preventDefault()
+
+  axios.post('/api/workout/date', { date: moment().format("L")})
+
+    .then(function ({data}) {
+      // console.log(data)
+      workouts.forEach((id) => {
+        // console.log(id)
+        axios.put(`/api/workout/${id}`, {workoutDateId: data.id})
+        .then(res => console.log(res))
+        .catch(err => console.log(err))
+      })
+    })
+    .catch(err => console.log(err))
+} )
