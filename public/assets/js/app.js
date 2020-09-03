@@ -1,5 +1,19 @@
-// Auto filling Tasks on start up
+document.getElementById('diary').addEventListener('click', () => {
+  event.preventDefault()
 
+  axios.post('/api/diary', {
+    entry: document.getElementById('diaryInput').value
+  })
+    .then(function (response) {
+      document.getElementById('diaryInput').value = ''
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+})
+
+// Auto filling Tasks on start up
 axios.get('/api/schedule')
 .then(({data}) => {
   data.forEach(entry => {

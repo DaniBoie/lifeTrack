@@ -46,9 +46,7 @@ document.getElementById('workoutComplete').addEventListener('click', (event) => 
   axios.post('/api/workout/date', { date: moment().format("L")})
 
     .then(function ({data}) {
-      // console.log(data)
       workouts.forEach((id) => {
-        // console.log(id)
         axios.put(`/api/workout/${id}`, {workoutDateId: data.id})
         .then(res => console.log(res))
         .catch(err => console.log(err))
@@ -56,3 +54,5 @@ document.getElementById('workoutComplete').addEventListener('click', (event) => 
     })
     .catch(err => console.log(err))
 } )
+
+
