@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-auto-rows: 100px;
+
 }
 
 .header-box{
@@ -17,8 +18,9 @@
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-
-    background-image: url(../image/sky-bg.jpg);
+    background-color: rgb(26, 45, 149);
+    color: white;
+    /* background-image: url(../image/sky-bg.jpg); */
 }
 
 .hbox1{
@@ -27,11 +29,21 @@
 
     margin-top: -40px;
 }
-
+/* 
 .logo-box{
     width: 50px;
     height: 50px;
     border: 1px solid black;
+} */
+
+.logo-img{
+    width: 100px;
+    height: 90px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
 }
 
 .hbox3{
@@ -39,13 +51,15 @@
     justify-self: center;
 
     margin-top: -40px;
+    margin-left: -50px;
 }
 
 .welcome-1{
     text-align: center;
-    border: 1px dashed black;
-    padding: .5rem;
-    background-color: violet;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .hbox4{
@@ -78,7 +92,7 @@
 }
 
 .circle:hover{
-    background: rgba(8, 7, 7, 0.5);
+    opacity: .6;
 }
 
 .hbox5{
@@ -92,10 +106,12 @@
     margin-right: 30px;
 }
 
-.first-name{
-    border: 1px dashed black;
-    padding: 1rem;
+.full-name{
     text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .hbox6{
