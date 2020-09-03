@@ -53,6 +53,7 @@ document.addEventListener('click', () => {
       .then(event.target.parentNode.remove())
       .catch(err => console.log(err))
   }
+<<<<<<< HEAD
 <<<<<<< HEAD:public/app.js
 })
 
@@ -62,3 +63,6 @@ document.addEventListener('click', () => {
 =======
 })
 >>>>>>> 39961b8d8e4087fc35e571c3306df0dfcc8c65e1:public/assets/js/app.js
+=======
+})
+>>>>>>> 6bdb0a492e1d4cc57c6e1ae46e12b77dbeebe78c
