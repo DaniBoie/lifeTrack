@@ -79,7 +79,7 @@
     <div class="fitness-wrapper">
         <div class="fbox1">
             <div class="card left-content-box">
-
+              <ul id="workoutToDo"></ul>
             </div>
         </div>
 
@@ -90,24 +90,25 @@
         </div>
 
         <div class="fbox3">
-            <div class="time-display">
+            <div class="time-display" id="timeDisplay">
                 Display Time
             </div>
         </div>
 
         <div class="fbox4">
             <div class="time-box">
-                <button class="timer-button">Timer</button>
+                <button class="timer-button" id="timerStart">Start Workout</button>
             </div>
 
             <div class="time-box">
-                <button class="stop-button">Stop</button>
+                <button class="stop-button" id="timerStop">Stop Timer</button>
             </div>
         </div>
 
         <div class="fbox5">
             <div class="card time-lap-box">
-
+                <ul id="doingWorkout"></ul>
+                <button id="nextSet">Next Workout</button>
             </div>
         </div>
 
@@ -119,7 +120,7 @@
 
         <div class="fbox7">
             <div class="card completed-workout-box">
-
+                <ul id="doneWorkout"></ul>
             </div>
         </div>
         
@@ -127,7 +128,9 @@
 
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+        integrity="sha512-rmZcZsyhe0/MAjquhTgiUcb4d9knaFc7b5xAfju483gbEXTkeJRUMIPk6s3ySZMYUHEcjKbjLjyddGWMrNEvZg=="
+        crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -138,7 +141,8 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./assets/js/app.js"></script>
+    <!-- <script src="./assets/js/app.js"></script> -->
+    <script src="./assets/js/fitnessPage.js"></script>
 
 </body>
 

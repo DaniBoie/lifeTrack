@@ -13,39 +13,27 @@ document.getElementById('diary').addEventListener('click', () => {
     });
 })
 
-document.getElementById('taskSubmit').addEventListener('click', () => {
-  event.preventDefault()
-
-  axios.post('/api/schedule', {
-    entry: document.getElementById('event').value,
-    dateFor: document.getElementById('date').value,
-    urgency: 0
-  })
-    .then(function ({ data }) {
-      console.log(data)
-      document.getElementById('event').value = ''
-      document.getElementById('date').value = ''
+// Auto filling Tasks on start up
+axios.get('/api/schedule')
+.then(({data}) => {
+  data.forEach(entry => {
+    console.log(entry.isFinished)
+    if (entry.isFinished === false){
       let eventElem = document.createElement('li')
-      eventElem.dataset.id = data.id
+      eventElem.dataset.id = entry.id
       eventElem.innerHTML = `
-      <p id="scheduleData" class="entryStyle" ><span id="entryData">${data.entry}</span><span id="dateData">${data.dateFor}</span></p>
+      <p id="scheduleData" class="entryStyle" ><span id="entryData">${entry.entry}</span><span id="dateData">${entry.dateFor}</span></p>
       <button class="alert-success check">✓</button>
       `
       document.getElementById('ulToDo').append(eventElem)
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
-})
-
-document.addEventListener('click', () => {
-  if (event.target.classList.contains('check')) {
-    let eventElem = document.createElement('li')
-    eventElem.dataset.id = event.target.parentNode.dataset.id
-    eventElem.innerHTML = `
-      <p class="entryStyle><span id="entryData">${document.getElementById('entryData').innerText}</span><span id="dateData">${document.getElementById('dateData').innerText}</span></p>
+    } else {
+      let eventElem = document.createElement('li')
+      eventElem.dataset.id = entry.id
+      eventElem.innerHTML = `
+      <p class="entryStyle><span id="entryData">${entry.entry}</span><span id="dateData">${entry.dateFor}</span></p>
       <button class="alert-danger remove">❌</button>
       `
+<<<<<<< HEAD
     document.getElementById('ulFinished').append(eventElem)
     event.target.parentNode.remove()
   } else if (event.target.classList.contains('remove')) {
@@ -66,3 +54,10 @@ document.addEventListener('click', () => {
 =======
 })
 >>>>>>> 6bdb0a492e1d4cc57c6e1ae46e12b77dbeebe78c
+=======
+      document.getElementById('ulFinished').append(eventElem)
+    }
+  })
+})
+.catch(err => console.log(err))
+>>>>>>> 17c213139ccaecc333886de596328eb9e20586aa
