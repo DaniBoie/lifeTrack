@@ -30,6 +30,13 @@ router.post('/workout/date', (req,res) => {
   .catch(err => console.log(err))
 })
 
+// Find all workout dates
+router.get('/workout/date', (req, res) => {
+  workoutDate.findAll({ include: [Workout]})
+    .then(workout => res.json(workout))
+    .catch(err => console.log(err))
+})
+
 // UPDATE a Workout entry
 router.put('/workout/:id', (req, res) => {
   Workout.update(req.body, { where: { id: req.params.id } })

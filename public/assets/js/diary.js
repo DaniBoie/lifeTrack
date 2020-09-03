@@ -1,6 +1,10 @@
 // var moment = require('moment'); // require
 // moment().format(); 
 
+// Event listener for diary entry on main page
+
+
+// DIARY page specific routes
 axios.get('./api/diary')
     .then(({ data }) => {
         var currentDay = moment().format("L");
