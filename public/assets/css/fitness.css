@@ -4,6 +4,8 @@
     grid-row-gap: 1em;
     grid-column-gap: 1rem;
     grid-auto-rows: 100px;
+
+    margin-top: 2rem;
 }
 
 /* .fitness-wrapper > div {
@@ -24,30 +26,39 @@
     margin-left: 2rem;
 }
 
-/* .fbox2{
+.fbox2{
+    align-self: center;
+}
 
-} */
+.keep-up-box{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    border: 1px dashed black;
+    padding: .5rem 0rem .5rem 0rem;
+}
 
 .fbox3{
-    /* Change Position to Middle */
     align-self: center;
+    justify-self: center;
+
+    /* Change Position to Middle */
     grid-column: 2/3;
     grid-row: 2/3;
 }
 
 .time-display{
-    margin: auto;
-    width: 50%;
-    height: 50%;
-    border: 1px solid black;
-}
-
-.custom-text{
+    border: 1px dashed black;
     text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    padding: .5rem 1rem .5rem 1rem;
 }
 
 .fbox4{
     align-self: start;
+    justify-items: center;
+
     /* Change Position to Middle */
     grid-column: 2/3;
     grid-row: 3/4;
@@ -61,24 +72,20 @@
     align-self: start;
 }
 
-.timer-button{
-    background-color: rgb(51, 168, 51);
+.timer-button, .stop-button{
     border: 1px solid black;
     color: white;
     font-size: 24px;
     padding: .5rem 2rem .5rem;
     text-align: center;
-    margin-left: 5rem;
+}
+
+.timer-button{
+    background-color: rgb(53, 179, 53);
 }
 
 .stop-button{
-    background-color: rgb(211, 50, 50);
-    border: 1px solid black;
-    color: white;
-    font-size: 24px;
-    padding: .5rem 2rem .5rem;
-    text-align: center;
-    margin-left: 1rem;
+    background-color: rgb(223, 43, 43);
 }
 
 .fbox5{
@@ -97,6 +104,14 @@
 
 .fbox6{
     align-self: center;
+    justify-self: center;
+}
+
+.completed-workout{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .fbox7{
