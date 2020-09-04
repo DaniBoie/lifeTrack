@@ -43,11 +43,11 @@ body h1 {
     padding: 1rem 0rem 1rem;
 }
 
-.sm-title {
+.sm-title-1, .sm-title-2 {
     box-shadow: 2px 2px black;
     text-align: center;
     padding: .5rem 1rem .5rem;
-    margin: 0rem 2.2rem 1rem;
+    margin-bottom: 1rem;
     border: 1px solid black;
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
@@ -55,6 +55,15 @@ body h1 {
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
 }
+
+.sm-title-1{
+    margin-right: 3rem;
+}
+
+.sm-title-2{
+    margin-left: 2.5rem;
+}
+
 
 .card-size {
     box-shadow: 2px 2px black;

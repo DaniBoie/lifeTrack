@@ -3,6 +3,7 @@
     grid-template-columns: repeat(7, 1fr);
     grid-auto-rows: 100px;
 
+
 }
 
 .header-box{
@@ -20,6 +21,7 @@
     -o-border-radius: 10px;
     background-color: rgb(26, 45, 149);
     color: white;
+    border: 2px solid black;
     /* background-image: url(../image/sky-bg.jpg); */
 }
 
@@ -27,7 +29,7 @@
     align-self: center;
     justify-self: center;
 
-    margin-top: -40px;
+    margin-top: -45px;
 }
 /* 
 .logo-box{
@@ -44,6 +46,7 @@
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
+
 }
 
 .hbox3{
@@ -89,10 +92,6 @@
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
-}
-
-.circle:hover{
-    opacity: .6;
 }
 
 .hbox5{
