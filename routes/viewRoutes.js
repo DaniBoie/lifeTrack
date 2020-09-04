@@ -13,4 +13,8 @@ router.get('/diary', (req, res) => {
   res.sendFile(join(__dirname, '..', 'public', 'diary.html'))
 })
 
+router.get('/fitness', (req, res) => {
+  res.sendFile(join(__dirname, '..', 'public', 'fitness.html'))
+})
+
 module.exports = router

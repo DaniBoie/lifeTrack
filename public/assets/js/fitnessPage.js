@@ -31,8 +31,8 @@ var workoutList =[]
 
 axios.get('/api/workout/date')
 .then(({data}) => {
-  var currentDay = moment().format("L");
-  
+  var currentDay = moment("2020/09/04").format("L");
+
   let indexVal = data.findIndex(data => moment(data.createdAt.substr(0, 10)).format("L") === currentDay);
 
   console.log(indexVal);
