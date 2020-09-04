@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@1,700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/fitness.css">
     <link rel="stylesheet" href="./assets/css/header.css">
@@ -77,6 +80,13 @@
     <!-- Header End! -->
 
     <div class="fitness-wrapper">
+
+        <div class="fbox0">
+            <div class="completed-workout">
+                Upcoming Workouts
+            </div>
+        </div>
+
         <div class="fbox1">
             <div class="card left-content-box">
               <ul id="workoutToDo"></ul>
@@ -90,9 +100,7 @@
         </div>
 
         <div class="fbox3">
-            <div class="time-display" id="timeDisplay">
-                Display Time
-            </div>
+            <div class="time-display" id="timeDisplay">Time</div>
         </div>
 
         <div class="fbox4">
@@ -105,10 +113,16 @@
             </div>
         </div>
 
+        <div class="fbox5-1">
+            <div class="completed-workout">
+                In Process
+            </div>
+        </div>
+
         <div class="fbox5">
             <div class="card time-lap-box">
-                <ul id="doingWorkout"></ul>
                 <button id="nextSet">Next Workout</button>
+                <ul id="doingWorkout"></ul>
             </div>
         </div>
 
