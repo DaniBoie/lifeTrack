@@ -43,17 +43,20 @@ axios.get('/api/workout/date')
     workoutElem.value = workout.id
     if (workout.lbs === null) {
       workoutElem.innerHTML = `
-      
-    <p>${workout.name}</p>
-    <p>${workout.sets} Sets</p>
-    <p>${workout.reps} Reps</p>
+      <div class = "fitnessCardStyle">
+    <p class="fitness-style">${workout.name}</p>
+    <p class="fitness-style">${workout.sets} Sets</p>
+    <p class="fitness-style">${workout.reps} Reps</p>
+      </div>
     `
     } else {
       workoutElem.innerHTML = `
-    <p>${workout.name}</p>
-    <p>${workout.sets} Sets</p>
-    <p>${workout.reps} Reps</p>
-    <p>${workout.lbs} Pounds</p>
+      <div class = "fitnessCardStyle">
+    <p class="fitness-style">${workout.name}</p>
+    <p class="fitness-style">${workout.sets} Sets</p>
+    <p class="fitness-style">${workout.reps} Reps</p>
+    <p class="fitness-style">${workout.lbs} Pounds</p>
+    </div>
     `
     }
     document.getElementById('workoutToDo').append(workoutElem)

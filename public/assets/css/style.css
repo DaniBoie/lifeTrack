@@ -407,7 +407,7 @@ textarea {
     margin-bottom: 25%;
 }
 
-.dateStyle{
+.dateStyle {
     border: 1px solid black;
     border-radius: 5px;
     width: fit-content;
@@ -416,4 +416,22 @@ textarea {
 .workoutStyle {
     padding-top: 3px;
     /* padding-bottom: 1px; */
+}
+
+.fitnessCardStyle {
+    display: inline-block;
+    width: 75%;
+    border: 2px solid black;
+    background-color: #8576A4;
+    text-align: center;
+    height: fit-content;
+    margin: 2%;
+}
+
+.fitness-style {
+    margin: 2px;
+}
+
+.fitnessBox {
+    text-align: center;
 }
