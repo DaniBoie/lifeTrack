@@ -13,10 +13,10 @@ html, body {
 } */
 
 .left-col {
-    border: 2px solid black;
     width: auto;
-
+    border: 2px solid black;
     box-shadow: 5px 10px black;
+    background-color: rgb(218, 212, 212);
     border-radius: 5%;
     -webkit-border-radius: 5%;
     -moz-border-radius: 5%;
@@ -115,15 +115,11 @@ body h1 {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    background-color: rgba(35, 0, 161, 0.417);
+    color: white;
 }
 
-.form-control {
-    width: 100%;
-    min-height: 150px;
-    padding: 1.2rem 1rem .5rem 3.5rem;
-    border: 3px rgb(14, 12, 10) solid;
-    font-size: 24px;
-}
+
 
 /* .title-2 {
     border: 1px solid black;
@@ -135,11 +131,13 @@ body h1 {
 } */
 
 .fitness-box-1, .fitness-box-2 {
-    border: 1px solid black;
     margin: 15px;
     width: 300px;
     min-height: 200px;
+    border: 1px solid black;
     box-shadow: 5px 2px black;
+    background-color: rgb(218, 212, 212);
+
 }
 
 .fitness-form{
@@ -234,12 +232,21 @@ body h1 {
     max-width: max-content;
 }
 
+.form-control {
+    min-height: 150px;
+    padding: 0rem 1rem .5rem 3.5rem;
+    border: 2px solid rgb(14, 12, 10) ;
+    font-size: 24px;
+    line-height: 50px;
+}
+
+#diaryInput{
+    background-color: #fdfd96;
+}
+
 textarea {
     border: 1px solid #EEEEEE;
-    box-shadow: 1px 1px 0 #DDDDDD;
     display: block;
-    /*     font-family: 'Marck Script',cursive;
-     */
     font-size: 22px;
     line-height: 50px;
     margin: 2% auto;
@@ -371,4 +378,10 @@ textarea {
 .diary-date{
     font-size: x-large;
     padding-top: 1rem;
+}
+
+#workoutComplete{
+    position: absolute;
+    bottom: 10px;
+    left: 10px
 }
