@@ -1,4 +1,9 @@
 html, body {
+    background: #2C1D63;  /* fallback for old browsers */ 
+    background: -moz-radial-gradient(circle, #2C1D63, #8576A4);  /* Firefox 3.6-15, Firefox 16-60 */ 
+    background: -webkit-radial-gradient(circle, #2C1D63, #8576A4);  /* Chrome 10-25, Safari 5.1-6 */ 
+    background: radial-gradient(circle, #2C1D63, #8576A4); /* IE 10+ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     margin:0; 
     font-family: 'Archivo Narrow', sans-serif;
 }
