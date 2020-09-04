@@ -118,7 +118,6 @@
     background-color: rgb(223, 43, 43);
 }
 
-
 .timer-button:hover, .stop-button:hover{
     text-shadow: 0 0 2em rgba(255,255,255,1);
     color:#FFFFFF;
