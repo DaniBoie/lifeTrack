@@ -125,11 +125,6 @@
 }
 
 #nextSet{
-    /* box-shadow: 2px 2px 2px navy;
-    border: 2px double rgb(49, 49, 202);
-    background-color: rgb(96, 96, 214);
-    width: 80%;
-     */
     display: inline-block;
     padding:0.3em 1.2em;
     margin:0 0.3em 0.3em 0;
@@ -151,11 +146,6 @@
 #nextSet:hover{
     background-color:#4095c6;
 }
-
-.next-set-button{
-    float: bottom;
-}
-
 
 .time-lap-box{
     height: 100%;
