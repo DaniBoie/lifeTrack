@@ -31,12 +31,19 @@ document.getElementById('workout').addEventListener('click', (event) => {
       workouts.push(data.id)
       console.log(workouts)
       let workoutElem = document.createElement('li')
+      if (workout.lbs === null){
       workoutElem.innerHTML = `
-      
       <div class="entryStyle">
       <p class="workoutStyle" data-id="${data.id}">${workout.name} | Sets: ${workout.sets} | Reps: ${workout.reps}</p>
       </div>
       `
+      } else {
+        workoutElem.innerHTML = `
+      <div class="entryStyle">
+      <p class="workoutStyle" data-id="${data.id}">${workout.name} | Sets: ${workout.sets} | Reps: ${workout.reps} | Lbs: ${workout.lbs}</p>
+      </div>
+      `
+      }
       document.getElementById('workouts').append(workoutElem)
     })
     .catch(function (error) {
