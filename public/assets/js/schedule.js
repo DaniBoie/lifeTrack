@@ -12,6 +12,8 @@ document.getElementById('taskSubmit').addEventListener('click', () => {
       document.getElementById('date').value = ''
       let eventElem = document.createElement('li')
       eventElem.dataset.id = data.id
+      eventElem.dataset.text = data.entry
+      eventElem.dataset.date = data.dateFor
       eventElem.innerHTML = `
       <div id="scheduleData" class="entryStyle">
       <p id="entryData">${data.entry}</p>
@@ -28,6 +30,8 @@ document.getElementById('taskSubmit').addEventListener('click', () => {
 
 document.addEventListener('click', () => {
   if (event.target.classList.contains('check')) {
+    let eventText = event.target.parentNode.dataset.text
+    let eventDate = event.target.parentNode.dataset.date
     axios.put(`/api/schedule/${event.target.parentNode.dataset.id}`, { isFinished: true })
       .then(res => console.log(res))
       .catch(err => console.log(err))
@@ -36,8 +40,8 @@ document.addEventListener('click', () => {
     eventElem.dataset.id = event.target.parentNode.dataset.id
     eventElem.innerHTML = `
       <div class="entryStyle">
-      <p id="entryData">${document.getElementById('entryData').innerText}</p>
-      <p id="dateData">${document.getElementById('dateData').innerText}</p>
+      <p id="entryData">${eventText}</p>
+      <p id="dateData">${eventDate}</p>
       </div>
       <button class="alert-danger remove">❌</button>
       `
