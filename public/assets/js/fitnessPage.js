@@ -43,6 +43,7 @@ axios.get('/api/workout/date')
     workoutElem.value = workout.id
     if (workout.lbs === null) {
       workoutElem.innerHTML = `
+      
     <p>${workout.name}</p>
     <p>${workout.sets} Sets</p>
     <p>${workout.reps} Reps</p>

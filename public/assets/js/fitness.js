@@ -1,5 +1,7 @@
 let workouts = []
 
+let workoutBlock = 0
+
 function clearEntries() {
   document.getElementById('workoutName').value = ''
   document.getElementById('workoutSets').value = ''
@@ -8,7 +10,7 @@ function clearEntries() {
 }
 
 document.getElementById('workout').addEventListener('click', (event) => {
-
+ if (workoutBlock === 0){
   let pounds
   if (document.getElementById('workoutLbs').value === '') {
     pounds = null
@@ -31,9 +33,9 @@ document.getElementById('workout').addEventListener('click', (event) => {
       let workoutElem = document.createElement('li')
       workoutElem.innerHTML = `
       
-
-
-      <p data-id="${data.id}">${workout.name} | Sets: ${workout.sets} | Reps: ${workout.reps}</p>
+      <div class="entryStyle">
+      <p class="workoutStyle" data-id="${data.id}">${workout.name} | Sets: ${workout.sets} | Reps: ${workout.reps}</p>
+      </div>
       `
       document.getElementById('workouts').append(workoutElem)
     })
@@ -41,11 +43,13 @@ document.getElementById('workout').addEventListener('click', (event) => {
       console.log(error);
     });
   clearEntries()
+ }
 })
 
 document.getElementById('workoutComplete').addEventListener('click', (event) => {
   event.preventDefault()
 
+  if (workoutBlock === 0){
   axios.post('/api/workout/date', { date: moment().format("L")})
 
     .then(function ({data}) {
@@ -56,6 +60,30 @@ document.getElementById('workoutComplete').addEventListener('click', (event) => 
       })
     })
     .catch(err => console.log(err))
+
+    deleteItems()
+  }
 } )
 
+function deleteItems(){
+  let ulDiv = document.getElementById('workouts')
 
+  if (ulDiv.childNodes.length === 0){
+    return
+  } else {
+    workoutBlock++
+  }
+
+    while (ulDiv.childNodes.length > 0) {
+      ulDiv.removeChild(ulDiv.childNodes[0])
+    }
+  
+
+    let finishElem = document.createElement('li')
+    finishElem.innerHTML = `
+    Today's Workout Logged!
+    `
+    ulDiv.appendChild(finishElem)
+    
+  
+}

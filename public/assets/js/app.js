@@ -1,6 +1,7 @@
+let diaryBlock = 0
 document.getElementById('diary').addEventListener('click', () => {
   event.preventDefault()
-
+  if(diaryBlock === 0) {
   axios.post('/api/diary', {
     entry: document.getElementById('diaryInput').value
   })
@@ -13,6 +14,8 @@ document.getElementById('diary').addEventListener('click', () => {
     .catch(function (error) {
       console.log(error);
     });
+    diaryBlock++
+  }
 })
 
 // Auto filling Tasks on start up
