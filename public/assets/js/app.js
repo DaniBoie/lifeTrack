@@ -5,7 +5,9 @@ document.getElementById('diary').addEventListener('click', () => {
     entry: document.getElementById('diaryInput').value
   })
     .then(function (response) {
-      document.getElementById('diaryInput').value = ''
+      document.getElementById("diaryInput").readOnly = true;
+      // document.getElementById('diaryInput').value = ''
+      document.getElementById('diaryInput').style.color = "gray";
       console.log(response);
     })
     .catch(function (error) {
