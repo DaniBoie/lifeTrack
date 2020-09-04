@@ -91,11 +91,23 @@
 }
 
 .timer-button, .stop-button{
-    border: 1px solid black;
-    color: white;
+    display:inline-block;
+    padding:0.46em 1.6em;
+    border:0.1em solid #000000;
+    margin:0 0.2em 0.2em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
     font-size: 24px;
-    padding: .5rem 2rem .5rem;
-    text-align: center;
+    color:#000000;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    /*background-color:#FFFFFF;
+    */text-align:center;
+    transition: all 0.15s;
+    -webkit-transition: all 0.15s;
+    -moz-transition: all 0.15s;
+    -ms-transition: all 0.15s;
+    -o-transition: all 0.15s;
 }
 
 .timer-button{
@@ -104,6 +116,13 @@
 
 .stop-button{
     background-color: rgb(223, 43, 43);
+}
+
+
+.timer-button:hover, .stop-button:hover{
+    text-shadow: 0 0 2em rgba(255,255,255,1);
+    color:#FFFFFF;
+    border-color:#FFFFFF;
 }
 
 .fbox5-1{
@@ -175,7 +194,8 @@
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    background-color: rgba(84, 63, 160, 0.417);
+    background-color: rgba(35, 0, 161, 0.417);
+    color: white;
 }
 
 .fbox7{
