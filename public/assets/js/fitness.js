@@ -30,6 +30,9 @@ document.getElementById('workout').addEventListener('click', (event) => {
       console.log(workouts)
       let workoutElem = document.createElement('li')
       workoutElem.innerHTML = `
+      
+
+
       <p data-id="${data.id}">${workout.name} | Sets: ${workout.sets} | Reps: ${workout.reps}</p>
       `
       document.getElementById('workouts').append(workoutElem)

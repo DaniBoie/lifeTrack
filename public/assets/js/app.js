@@ -24,7 +24,10 @@ axios.get('/api/schedule')
       let eventElem = document.createElement('li')
       eventElem.dataset.id = entry.id
       eventElem.innerHTML = `
-      <p id="scheduleData" class="entryStyle" ><span id="entryData">${entry.entry}</span><span id="dateData">${entry.dateFor}</span></p>
+      <div id="scheduleData" class="entryStyle">
+      <p id="entryData">${entry.entry}</p>
+      <p id="dateData">${entry.dateFor}</p>
+      </div>
       <button class="alert-success check">✓</button>
       `
       document.getElementById('ulToDo').append(eventElem)
@@ -32,7 +35,10 @@ axios.get('/api/schedule')
       let eventElem = document.createElement('li')
       eventElem.dataset.id = entry.id
       eventElem.innerHTML = `
-      <p class="entryStyle><span id="entryData">${entry.entry}</span><span id="dateData">${entry.dateFor}</span></p>
+      <div class="entryStyle">
+      <p id="entryData">${entry.entry}</p>
+      <p id="dateData">${entry.dateFor}</p>
+      </div>
       <button class="alert-danger remove">❌</button>
       `
       document.getElementById('ulFinished').append(eventElem)
