@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/header.css">
 
@@ -70,23 +72,24 @@
         </div>
     </div>
     <!-- Header End! -->
-    
-    <div class="card diaryEntry col-md-6 ">
-        <div class="row">
-            <div class="card-header">
-                Diary Entry
+    <div class="center">
+        <div class="card diaryEntry col-md-6 ">
+            <div class="row">
+                <div class="card-header">
+                    <h1>Diary Entry</h1>
+                </div>
             </div>
-        </div>
 
-        <div class="row center centerMid">
-            <div class="col-md-10">
-                <div id="diaryDate"></div>
-                <form>
-                    <label for="date">Search For Entry By Date:</label>
-                    <input type="date" name="date" id="date">
-                    <input type="submit" value="Search" id="dateSubmit">
-                </form>
-                <textarea class="diaryRender" id="diaryRender" readonly></textarea>
+            <div class="row center centerMid">
+                <div class="col-md-10">
+                    <div id="diaryDate"></div>
+                    <form>
+                        <label class="diary-date" for="date">Search For Entry By Date:</label>
+                        <input class="event-date-input" type="date" name="date" id="date">
+                        <input class="special-button" type="submit" value="Search" id="dateSubmit">
+                    </form>
+                    <textarea class="diaryRender" id="diaryRender" readonly></textarea>
+                </div>
             </div>
         </div>
     </div>

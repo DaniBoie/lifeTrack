@@ -221,6 +221,7 @@ body h1 {
     color: black;
     font-weight: bold;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 /* #dropdownMenu2 {
@@ -251,6 +252,7 @@ textarea {
     -webkit-background-size: 100% 50px;
     background-size: 100% 50px;
     background-attachment: local;
+    background-color: #fdfd96;
 }
 
 .diaryRender {
@@ -328,14 +330,11 @@ textarea {
 .diaryEntry {
     width: 50%;
     margin: 4rem;
+    border: 2px solid black;
     box-shadow: 10px 10px 10px black;
-    border-top-right-radius: 2%;
-    border-bottom-left-radius:2%;
-
-}
-
-#dateSubmit{
-    background-color:teal;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    background-color: rgb(218, 212, 212);
 }
 
 #diaryRender{
@@ -344,4 +343,32 @@ textarea {
 
 .entryDate{
     color:teal;
+}
+
+.special-button{
+    display: inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    background-color: rgb(96, 96, 214);
+    text-align:center;
+    transition: all 0.2s;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+
+.special-button:hover{
+    background-color:#4095c6;
+}
+
+.diary-date{
+    font-size: x-large;
+    padding-top: 1rem;
 }
