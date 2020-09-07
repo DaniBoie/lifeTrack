@@ -26,4 +26,4 @@ LifeTrack is a daily assistant that helps keep track of your life, one day at a 
 
 ## Go to active website [here](https://afternoon-stream-93666.herokuapp.com/)
 </br>
-[!example image](./public/assets/image/example-image.png)
+![example image](https://github.com/DaniBoie/lifeTrack/blob/master/public/assets/image/example-image.png)
