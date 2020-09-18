@@ -9,10 +9,23 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <!-- npm animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+
+    <!-- Personal Styling Libraries-->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/fitness.css">
     <link rel="stylesheet" href="./assets/css/header.css">
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/image/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/image/favicon-16x16.png">
+    <link rel="icon" href="./assets/image/favicon.ico" type="image/x-icon" />
+    
     <title>Life Track: Fitness</title>
 </head>
 
@@ -29,17 +42,17 @@
             <div class="hbox2"></div>
 
             <div class="hbox3">
-                <div class="welcome-1">
+                <div class="welcome-1 animate__animated animate__backInLeft">
                     Welcome...
                 </div>
             </div>
 
             <div class="hbox4">
-                <img class="circle" src="./assets/image/minion.jpg" alt="minion portrait">
+                <a href="./assets/image/comet.jpg" target="_blank"><img class="circle" src="./assets/image/comet.jpg" alt="Comet profile picture"></a>
             </div>
 
             <div class="hbox5">
-                <div class="full-name">
+                <div class="full-name animate__animated animate__backInRight">
                     Adam Madueno
                 </div>
             </div>
@@ -70,16 +83,23 @@
                           <path fill-rule="evenodd"
                             d="M5 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm1.639-4.208l1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047L11 4.75V7a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 7v-.5s1.54-1.274 1.639-1.208zM6.75 4.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5z" />
                         </svg></a> </button>
-                  </div>
+                </div>
             </div>
         </div>
     </div>
     <!-- Header End! -->
 
     <div class="fitness-wrapper">
+
+        <div class="fbox0">
+            <div class="completed-workout animate__animated animate__rotateInDownLeft">
+                Upcoming Workouts:
+            </div>
+        </div>
+
         <div class="fbox1">
             <div class="card left-content-box">
-              <ul id="workoutToDo"></ul>
+              <ul class="fitnessBox" id="workoutToDo"></ul>
             </div>
         </div>
 
@@ -90,9 +110,7 @@
         </div>
 
         <div class="fbox3">
-            <div class="time-display" id="timeDisplay">
-                Display Time
-            </div>
+            <div class="time-display" id="timeDisplay">Time</div>
         </div>
 
         <div class="fbox4">
@@ -105,22 +123,28 @@
             </div>
         </div>
 
+        <div class="fbox5-1">
+            <div class="completed-workout">
+                In Process:
+            </div>
+        </div>
+
         <div class="fbox5">
             <div class="card time-lap-box">
-                <ul id="doingWorkout"></ul>
                 <button id="nextSet">Next Workout</button>
+                <ul class="fitnessBox" id="doingWorkout"></ul>
             </div>
         </div>
 
         <div class="fbox6">
-            <div class="completed-workout">
-                Completed Workouts
+            <div class="completed-workout animate__animated animate__rotateInDownRight">
+                Completed Workouts:
             </div>
         </div>
 
         <div class="fbox7">
             <div class="card completed-workout-box">
-                <ul id="doneWorkout"></ul>
+                <ul class="fitnessBox" id="doneWorkout"></ul>
             </div>
         </div>
         

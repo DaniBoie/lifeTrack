@@ -12,8 +12,13 @@ document.getElementById('taskSubmit').addEventListener('click', () => {
       document.getElementById('date').value = ''
       let eventElem = document.createElement('li')
       eventElem.dataset.id = data.id
+      eventElem.dataset.text = data.entry
+      eventElem.dataset.date = data.dateFor
       eventElem.innerHTML = `
-      <p id="scheduleData" class="entryStyle" ><span id="entryData">${data.entry}</span><span id="dateData">${data.dateFor}</span></p>
+      <div id="scheduleData" class="entryStyle">
+      <p id="entryData">${data.entry}</p>
+      <p id="dateData">${data.dateFor}</p>
+      </div>
       <button class="alert-success check">✓</button>
       `
       document.getElementById('ulToDo').append(eventElem)
@@ -25,6 +30,8 @@ document.getElementById('taskSubmit').addEventListener('click', () => {
 
 document.addEventListener('click', () => {
   if (event.target.classList.contains('check')) {
+    let eventText = event.target.parentNode.dataset.text
+    let eventDate = event.target.parentNode.dataset.date
     axios.put(`/api/schedule/${event.target.parentNode.dataset.id}`, { isFinished: true })
       .then(res => console.log(res))
       .catch(err => console.log(err))
@@ -32,7 +39,10 @@ document.addEventListener('click', () => {
     let eventElem = document.createElement('li')
     eventElem.dataset.id = event.target.parentNode.dataset.id
     eventElem.innerHTML = `
-      <p class="entryStyle><span id="entryData">${document.getElementById('entryData').innerText}</span><span id="dateData">${document.getElementById('dateData').innerText}</span></p>
+      <div class="entryStyle">
+      <p id="entryData">${eventText}</p>
+      <p id="dateData">${eventDate}</p>
+      </div>
       <button class="alert-danger remove">❌</button>
       `
     document.getElementById('ulFinished').append(eventElem)

@@ -1,5 +1,5 @@
-const Diary = require('./Diary.js')
-const Schedule = require('./Schedule.js')
+const Diary = require('./diary.js')
+const Schedule = require('./schedule.js')
 const User = require('./User.js')
 const Workout = require('./Workout')
 const workoutDate = require('./workoutDate')

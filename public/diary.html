@@ -9,9 +9,22 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <!-- npm animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+
+    <!-- Personal Styling Libraries-->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/header.css">
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/image/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/image/favicon-16x16.png">
+    <link rel="icon" href="./assets/image/favicon.ico" type="image/x-icon" />
+    
     <title>Life Track: Diary</title>
 </head>
 
@@ -28,17 +41,17 @@
             <div class="hbox2"></div>
 
             <div class="hbox3">
-                <div class="welcome-1">
+                <div class="welcome-1 animate__animated animate__backInLeft">
                     Welcome...
                 </div>
             </div>
 
-            <div class="hbox4 circle">
-                Profile Page
+            <div class="hbox4">
+                <a href="./assets/image/comet.jpg" target="_blank"><img class="circle" src="./assets/image/comet.jpg" alt="Comet profile picture"></a>
             </div>
 
             <div class="hbox5">
-                <div class="full-name">
+                <div class="full-name animate__animated animate__backInRight">
                     Adam Madueno
                 </div>
             </div>
@@ -70,23 +83,25 @@
         </div>
     </div>
     <!-- Header End! -->
-    
-    <div class="card diaryEntry col-md-6 ">
-        <div class="row">
-            <div class="card-header">
-                Diary Entry
-            </div>
-        </div>
 
-        <div class="row center centerMid">
-            <div class="col-md-10">
-                <div id="diaryDate"></div>
-                <form>
-                    <label for="date">Search For Entry By Date:</label>
-                    <input type="date" name="date" id="date">
-                    <input type="submit" value="Search" id="dateSubmit">
-                </form>
-                <textarea class="diaryRender" id="diaryRender" readonly></textarea>
+    <div class="center">
+        <div class="card diaryEntry col-md-6 ">
+            <div class="row">
+                <div class="card-header">
+                    <h1>Diary Entry</h1>
+                </div>
+            </div>
+
+            <div class="row center centerMid">
+                <div class="col-md-10">
+                    <div id="diaryDate"></div>
+                    <form>
+                        <label class="diary-date" for="date">Search For Entry By Date:</label>
+                        <input class="event-date-input" type="date" name="date" id="date">
+                        <input class="special-button" type="submit" value="Search" id="dateSubmit">
+                    </form>
+                    <textarea class="diaryRender" id="diaryRender" readonly></textarea>
+                </div>
             </div>
         </div>
     </div>
